@@ -21,7 +21,6 @@ pipeline {
     stage('docker build'){
       steps{
         script {
-          sudo su
           sudo docker.build('kuhu2020/simple-web-server')
         }
       }
