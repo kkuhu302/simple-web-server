@@ -29,7 +29,7 @@ pipeline {
       steps{
         script {
           docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-            docker.image('kuhu2020/simple-web-server').push('badconfig')
+            docker.image('kuhu2020/simple-web-server').push('newcontainer')
           }
         }
       }
